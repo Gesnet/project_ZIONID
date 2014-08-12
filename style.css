@@ -7,12 +7,12 @@
 /* 페이지 공통
 *****************************************************************/
 em { font-style: normal;}
-a{ text-decoration: none;}
+a{ text-decoration: none; color: #bdbcbc;}
+ul{list-style: none;}
 
 /* 헤더 #top 공통
 *****************************************************************/
 #top { position: relative; height: 144px; background-color: #505b84;}
-#top ul{list-style: none;}
 
 /* #top 로고
 *****************************************************************/
@@ -76,12 +76,12 @@ a{ text-decoration: none;}
 	text-transform: uppercase;
 }
 #top .contact #prj_request{
-	background-color: #aace3d;
+	background-color: #05b5c5;
 	top: 97px;
 }
 #top .contact #brochure{
+	background-color: #aace3d;
 	top : 63px;
-	background-color: #05b5c5;
 }
 
 /* #top #gnb .contact 상단 우측 메뉴 SNS 아이콘
@@ -119,7 +119,7 @@ a{ text-decoration: none;}
 
 /* 섹션 메인 (#main) 공통
 *****************************************************************/
-#main { padding-top : 18px;} 
+#main { padding-top : 18px; position:relative; width: 100%;} 
 
 /* 메인 > 타이틀 #main .title
 *****************************************************************/
@@ -134,5 +134,78 @@ a{ text-decoration: none;}
 
 }
 
-#main .works_view .front > span{ font-size:12px; color:#bdbcbc; }
+/* 메인 > 포트폴리오
+*****************************************************************/
+#main .works_view { width: 100%;}
+#main .works_view > li{
+	float: left;
+	height: 296px;
+	background-color: #eaeaea;
+	border-bottom: 1px solid #fff;
+}
+#main .works_view > li *{ display: block;}
+#main .works_view > li + li{ 
+	border-left: 1px solid #fff;
 
+}
+#main .works_view > li + li::before{ 
+	position: relative;
+	top: 50%; left: -3px;
+	z-index: 1000;
+	width: 5px; height: 11px;
+	content: "";
+	background-color:#fff;
+	border-radius: 3px;
+}
+#main .works_view .front{ padding-top: 127px; padding-left : 39px;}
+#main .works_view .coustomer_info > h3, #main .works_view .coustomer_info > .title{text-transform: uppercase;}
+#main .works_view .coustomer_info > em{ font-size:12px; color:#bdbcbc; }
+
+/* 포트폴리오 필터링 메뉴
+*****************************************************************/
+#main #works_filter {position:absolute; top:69px; right: 29px;}
+#main #works_filter li{float: left; padding-right: 19px; }
+#main #works_filter li + li{padding-left: 19px; }
+#main #works_filter li > a
+{ 
+	display: block;
+	height: 10px;
+	padding-bottom: 16px; 
+	text-indent: -99999em; 
+}
+#main #works_filter li a.all{
+	width: 25px;
+	background-image : url("../img/work_all.gif");
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#main #works_filter li a.website{
+	width: 54px;
+	background-image : url("../img/work_website.gif");
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#main #works_filter li a.mobile{
+	width: 42px;
+	background-image : url("../img/work_mobile.gif");
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#main #works_filter li a.maintenance{
+	width: 92px;
+	background-image : url("../img/work_maintenance.gif");
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#main #works_filter li a.commerce{
+	width: 72px;
+	background-image : url("../img/work_commerce.gif");
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#main #works_filter li a.marketing{
+	width: 119px;
+	background-image : url("../img/work_marketing.gif");
+	background-repeat: no-repeat;
+	background-position: left top;
+}
