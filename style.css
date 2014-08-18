@@ -157,9 +157,10 @@ ul{list-style: none;}
 	background-color:#fff;
 	border-radius: 3px;
 }
+#main .works_view > li:nth-child(3n+1){ clear: both;}
 #main .works_view .front{ padding-top: 127px; padding-left : 39px;}
 #main .works_view .coustomer_info > h3, #main .works_view .coustomer_info > .title{text-transform: uppercase;}
-#main .works_view .coustomer_info > em{ font-size:12px; color:#bdbcbc; }
+#main .works_view .coustomer_info em{ font-size:12px; color:#bdbcbc; }
 
 /* 포트폴리오 필터링 메뉴
 *****************************************************************/
