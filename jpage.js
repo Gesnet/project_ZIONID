@@ -51,8 +51,7 @@ var $visual = $("#main .works_view .back");
 
 for(var i = 0; i < $visual.length; i++){
 	if($visual[i].classList.length > 1){
-		$($visual[i]).css("background-image", "url('img/customers_visual/"+$visual[i].classList[1]+"_visual.jpg')");
-		// $(this).css("background-image", "url('img/customers_visual/"+$visual[i].classList[1]+"_visual.jpg')");
+		$($visual[i]).css({"background-image":"url('img/customers_visual/"+$visual[i].classList[1]+"_visual.jpg')", "height":"281px"});
 	}
 }
 
