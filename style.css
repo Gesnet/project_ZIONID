@@ -138,12 +138,13 @@ ul{list-style: none;}
 *****************************************************************/
 #main .works_view { width: 100%;}
 #main .works_view > li{
+	position: relative;
 	float: left;
 	height: 296px;
 	background-color: #eaeaea;
 	border-bottom: 1px solid #fff;
 }
-#main .works_view > li *{ display: block;}
+#main .works_view > li * { display: block;}
 #main .works_view > li + li{ 
 	border-left: 1px solid #fff;
 
@@ -157,10 +158,19 @@ ul{list-style: none;}
 	background-color:#fff;
 	border-radius: 3px;
 }
-#main .works_view > li:nth-child(3n+1){ clear: both;}
-#main .works_view .front{ padding-top: 127px; padding-left : 39px;}
-#main .works_view .coustomer_info > h3, #main .works_view .coustomer_info > .title{text-transform: uppercase;}
+#main .works_view .front{ padding-top: 22%; padding-left : 39px;}
+#main .works_view .coustomer_info > h3, #main .works_view .coustomer_info > .title{text-transform: uppercase; margin-top: 1%;}
 #main .works_view .coustomer_info em{ font-size:12px; color:#bdbcbc; }
+#main .works_view .front .icon > span { margin-top: 10px; margin-right: 10px;}
+#main .works_view .front .icon:last-child{ margin-right: 10%;}
+
+/* 포트폴리오 mouseenter 시 이미지 보여주기
+*****************************************************************/
+#main .works_view .back { 
+	height: 281px;
+	background-position: center; 
+	/*overflow: hidden; */
+}
 
 /* 포트폴리오 필터링 메뉴
 *****************************************************************/
